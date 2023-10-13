@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+/*header section*/
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  color: white;
+  background-image: url(https://wallpapers.com/images/hd/professional-background-0rvi0y9hjbs1yq1q.jpg);
+}
+
+/* Nav bar */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+  list-style-type: none;
+}
+
+nav a {
+  background-color: unset;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+/*body section*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 200%;
+  margin: 0;
+}
+
+img{
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 200px;
+  display: block;
+  margin: auto;
+}
+
+/* Travelling quote */
+
+.hero-banner{
+  background-image: url(https://img.freepik.com/premium-photo/dark-landscape-with-mountains-dark-sky-with-clouds_677426-157.jpg);
+  
+}
+
+.hero-banner h2 {
+  margin: 2%;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+
+.page-wrapper{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+
+/* About Me section */
+
+#about {
+  display: flex;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.25),0 3px 10px 0 rgba(0,0,0,.2);
+  padding: 1%;
+}
+
+.row{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.first-column{
+  max-width: 50%;
+}
+
+.first-column h2{
+display: flex;
+justify-content: center;
+}
+
+
+h3{
+  line-height: 60px;
+}
+
+.column1{
+  margin-bottom: 20px;
+  
+}
+
+/*Work Section*/
+
+#work {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.25),0 3px 10px 0 rgba(0,0,0,.2);
+  margin-top: 1%;
+  padding: 1%;
+}
+
+
+#projects{
+  display: grid;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+  "project1 project2"
+  "project1 project3";
+}
+
+#project1 {
+  grid-area: project1;
+  background-image: url("../images/bowtie-cat.png");
+  background-size: 500px;
+  background-position: left;
+  max-width: 97.5%;
+
+}
+
+#project2 {
+  grid-area: project2;
+  background-image: url("../images/Screenshothoriseon.png");
+  background-size: 400px;
+}
+
+#project3 {
+  grid-area: project3;
+
+}
+
+#project-name p, #project-name h3 {
+  color: white;
+  background-color: rgb(4, 4, 50);
+}
+
+#project-name{
+  border-right: white solid;
+  border-bottom: white solid;
+  background: rgb(0, 0, 0, 0.7);
+  margin-left: 3px;
+}
+
+#project-name2{
+  color: white;
+  background-color:rgb(4, 4, 50);
+  border-right: white solid;
+  border-bottom: white solid;
+  background: rgb(0, 0, 0, 0.7);
+}
+
+.grid-area {
+  display: flex;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+
+}
+
+#work h2{
+  display: flex;
+  justify-content: center;
+}
+
+/* Contact Me section */
+
+#contact {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.25),0 3px 10px 0 rgba(0,0,0,.2);
+  padding: 1%;
+  margin-top: 1%;
+
+}
+
+#contact h2{
+  display: flex;
+  justify-content: center;
+
+}
+
+#contact-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%; 
+}
+
+/* footer style */
+
+footer{
+  text-align: center;
+  
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 1080px) and (min-width: 601px) {
+
+  header {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  header {
+    flex-direction: column;
+  }
+
+  #projects{
+    display: block;
+  }
+
+  .row{
+    display: block;
+  }
+
+}
+
