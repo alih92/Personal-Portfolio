@@ -8,4 +8,4 @@ I have utilized extensive research techniques to incoproate icons into the conta
 
 I have also used media queries to accomodate for different viewports, ensuring the content isn't lost when different device sizes are used. 
 
-![Alt text](<images/Screenshot 2023-10-13 at 15.32.54.png>)
+![Alt text](<challenge/images/Screenshot 2023-10-13 at 15.32.54.png>)
